@@ -1,0 +1,15 @@
+{
+  "name": "lamping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webdriverio": "^4.0.5"
+  }
+}

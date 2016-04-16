@@ -1,0 +1,16 @@
+var webdriverio = require('webdriverio');
+var options = { desiredCapabilities: { browserName: 'firefox' } };
+var client = webdriverio.remote(options);
+
+client
+    .init()
+    .url('https://learn.visualregressiontesting.com')
+    .setValue('#mce-EMAIL', 'test@test.com')
+    .submitForm('#mc-embedded-subscribe-form')
+    .getTitle().then(function(title) {
+        console.log('Title is: ' + title);
+
+        // outputs:
+        // "Title is: WebdriverIO (Software) at DuckDuckGo"
+    })
+    .end();
