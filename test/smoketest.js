@@ -3,7 +3,6 @@ var expect = require('chai').expect;
 describe('Smoke Tests', function() {
 
   before(function() {
-    console.log(process.env.RALLY_USERNAME);
     browser
         .url('/')
         .setValue('#j_username', process.env.RALLY_USERNAME)
@@ -25,6 +24,12 @@ describe('Smoke Tests', function() {
     expect(browser.waitForExist('a=Quality')).to.be.true;
     browser.doubleClick('a=Quality');
     expect(browser.waitForExist('#defect')).to.be.true;
+  });
+
+  it('should load the Portfolio Items Page', function() {
+    expect(browser.waitForExist('a=Portfolio')).to.be.true;
+    browser.doubleClick('a=Portfolio');
+    expect(browser.waitForExist('.rui-gridboard')).to.be.true;
   });
 
   after(function() {
