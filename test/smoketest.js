@@ -10,10 +10,6 @@ describe('Smoke Tests', function() {
         .submitForm('#login-form');
   });
 
-  it('should confirm successful login and see the nav bar', function() {
-    expect(browser.waitForExist('#header')).to.be.true;
-  });
-
   it('should load the Iteration Status Page', function() {
     expect(browser.waitForExist('a=Track')).to.be.true;
     browser.doubleClick('a=Track');
@@ -33,7 +29,7 @@ describe('Smoke Tests', function() {
   });
 
   after(function() {
-    browser.url('https://rally1.rallydev.com/slm/j_spring_security_logout');
+    //browser.url('https://rally1.rallydev.com/slm/j_spring_security_logout');
   });
 
 })
