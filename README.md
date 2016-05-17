@@ -1,5 +1,5 @@
 # smoketest-hackathon
-Hackathon to create smoke tests for top 10 pages using WebdriverIO
+Hackathon to create smoke tests for Agile Central pages using WebdriverIO
 
 1. Clone this repo
 2. Download selenium standalone jar from http://www.seleniumhq.org/download/
