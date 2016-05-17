@@ -15,7 +15,7 @@ To run with local Selenium and browser:
 - export RALLY_PASSWORD={valid ALM password}
 - node_modules/.bin/wdio wdio.conf.js
 
-![alt tag](https://raw.githubusercontent.com/abrockett/smoketest-hackathon/master/docs/Local.png)
+![alt tag](https://raw.githubusercontent.com/abrockett/smoketest-hackathon/master/docs/RunningLocally.png)
 
 To run at Sauce Labs:
 - export SAUCE_USERNAME={valid Sauce Labs username}
@@ -25,7 +25,12 @@ To run at Sauce Labs:
 - node_modules/.bin/wdio wdio.conf.sauce.js
 - Visit https://saucelabs.com/beta/dashboard/tests to see test results
 
+![alt tag](https://raw.githubusercontent.com/abrockett/smoketest-hackathon/master/docs/RunningAtSauceLabs.png)
+
 Still to do:
 - Figure out how and where to plug it into the build system, using Sauce Connect to give the Sauce VMs access to a running server behind our firewall, and possibly adding it as a step to the deploy process as well.
 - Add smoke tests for more pages.  Current setup only hits 3, probably need at least the top 10.
 - Add browsers.
+
+![alt tag](https://raw.githubusercontent.com/abrockett/smoketest-hackathon/master/docs/UsingSauceConnect.png)
+
