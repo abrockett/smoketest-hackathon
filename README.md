@@ -10,7 +10,7 @@ Hackathon to create smoke tests for top 10 pages using WebdriverIO
 To run with local Selenium and browser:
 
 - cd into this repo's directory
-- java -jar {somewhere}/selenium-server-standalone-2.53.0.jar
+- java -jar selenium-server-standalone-2.53.0.jar
 - export RALLY_USERNAME={valid ALM username}
 - export RALLY_PASSWORD={valid ALM password}
 - node_modules/.bin/wdio wdio.conf.js
