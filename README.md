@@ -15,6 +15,8 @@ To run with local Selenium and browser:
 - export RALLY_PASSWORD={valid ALM password}
 - node_modules/.bin/wdio wdio.conf.js
 
+![alt tag](https://raw.githubusercontent.com/abrockett/smoketest-hackathon/master/docs/Local.png)
+
 To run at Sauce Labs:
 - export SAUCE_USERNAME={valid Sauce Labs username}
 - export SAUCE_ACCESS_KEY={valid Sauce Labs access key}
